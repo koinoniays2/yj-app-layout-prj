@@ -22,7 +22,7 @@ body { height: 3500px; background-color: #F6F6F6; }
     z-index: 999;
     border-top: 1px solid #212121; border-bottom: 1px solid #212121;
     text-align: center; line-height: 5vh;
-    display: none; opacity: 0;
+    opacity: 0; display: none;
 }
 #menu ul {
     height: 7vh;
