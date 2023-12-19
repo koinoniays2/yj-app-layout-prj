@@ -30,7 +30,7 @@ gsap.to('.content-text', {
         start: 'bottom-=300px top+=100px',
         scrub: 1,
         end: '90% top+=200px',
-        markers: true
+        // markers: true
     },
     display: 'block',
     opacity: 1

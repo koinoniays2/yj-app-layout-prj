@@ -91,11 +91,11 @@ body { height: 3500px; background-color: #F6F6F6; }
 }
 #main-content span:nth-child(1){
     font-size: 5rem; 
-    position: fixed; top:30%; margin-left: 20px;
+    position: fixed; top:30%; margin-left: 10px;
 }
 #main-content span:nth-child(2) {
     font-size: 6rem;
-    position: fixed; right: 0; bottom: 25%; margin-right: 20px;
+    position: fixed; right: 0; bottom: 25%; margin-right: 10px;
 }
 
 
