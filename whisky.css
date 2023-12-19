@@ -33,11 +33,6 @@ body { height: 3500px; background-color: #F6F6F6; }
     #menu > ul > li > a {
         display: block;
     }
-    /* 토글 메뉴 i 왼쪽 정렬 */
-    /* #menu > ul > li:nth-child(1) {
-        display: flex; font-size: 1.5rem; 
-        justify-content: left; padding: 10px 10px;
-    } */
 
     /* ---헤더 제목(왼쪽)------------------------------ */
     #menu > ul > li:nth-child(1) {
