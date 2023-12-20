@@ -24,6 +24,15 @@ tl.fromTo('#main-content span:nth-child(2)',
     })
     .to('#main-content span:nth-child(2)',{
         opacity: 1
+    })
+    .to('#main-content span' ,{ //fixed된 글씨 없애기 위해
+        scrollTrigger: {
+            trigger: '#img-container',
+            scrub: true,
+            start: 'top top+=70px',
+            end: 'top top+=70px',
+        },
+        display: 'none'
     });
 
 /* 헤더 밑 텍스트 바 */
@@ -62,3 +71,26 @@ img.forEach((item, i) => {
         }, x: 0 
     });
 });
+
+
+/* 모달 */
+const btn = document.querySelector('#single-malt');
+const modalBack = document.querySelector('#modal-back');
+const modalContainer = document.querySelector('#modal-container');
+const closeBtn = document.querySelector('#close-btn');
+const toggleBar = document.querySelector("#toggle-bar");
+
+btn.onclick = function() {
+    modalBack.style.display = 'block';
+
+}
+closeBtn.onclick = function() {
+    modalBack.style.display = 'none';
+
+}
+
+window.onclick = function(event) {
+  if (event.target === modalBack || event.target === modalContainer) {
+    modalBack.style.display = "none";
+  }
+}

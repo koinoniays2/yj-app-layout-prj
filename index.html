@@ -16,6 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- bxslider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <link href="whisky.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -40,7 +45,7 @@
     </section>
     <section id="img-container">
         <div class="back-img"></div>
-        <div class="img img1"><img src="images/맥켈란12.webp" alt="Single Malt : Macallan 12 Years"></div>
+        <div class="img img1"><img src="images/맥켈란12.webp" alt="Single Malt : Macallan 12 Years" ></div>
         <div class="img img2"><img src="images/맥켈란15.webp" alt="Single Malt : Macallan 15 Years"></div>
         <div class="img img3"><img src="images/발베니12.webp" alt="Single Malt : Balvenie 12 Years"></div>
         <div class="img img4"><img src="images/발베니16.webp" alt="Single Malt : Balvenie 16 Years"></div>
@@ -51,22 +56,32 @@
     </section>
     <input type="checkbox" id="toggle-check" />
     <label for="toggle-check">
-        <i id="toggle-icon1" class="fa-solid fa-whiskey-glass"></i>
-        <i id="toggle-icon2" class="fa-solid fa-whiskey-glass fa-flip"></i>
+        <i id="toggle-icon1" class="fa-solid fa-bars"></i>
+        <i id="toggle-icon2" class="fa-solid fa-bars fa-flip"></i>
     </label>
     <nav id="toggle-bar">
         <ul class="toggle-menu">
-            <li><a href="#">Single Malt</a></li>
-            <li><a href="#">Blended Scotch</a></li>
-            <li><a href="#">Cognac</a></li>
+            <li id="single-malt">Single Malt</li> <!-- 모달열기 -->
+            <li>Blended Scotch</li>
+            <li>Cognac</li>
         </ul>
     </nav>
+    <footer>
+        <p>지나친 음주는 뇌졸중 기억력 손상이나 치매를 유발합니다.</p>
+        <p>COPYRIGHT 2023. CYS. ALL RIGHTS RESERVED.</p>
+    </footer>
 
-    <!-- <section id="section-1">
-        <div class="background"></div>
-    </section>
-    <section id="section-2">
-    </section> -->
+    <!-- 모달 -->
+    <div id="modal-back">
+        <div id="modal-container">
+            <div id="modal-content">
+                <span id="close-btn">&times;</span>
+                <!-- <img src="images/싱글몰트.png" alt="싱글몰트 설명과 종류"/> -->
+                <div class="modal-img"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="whisky.js"></script>
 </body>
 </html>

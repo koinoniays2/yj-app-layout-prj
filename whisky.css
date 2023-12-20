@@ -5,7 +5,7 @@ i { color: #212121 }
 #header, #img-container, .content-text {
     background-color: #F6F6F6;
 }
-body { height: 3500px; background-color: #F6F6F6; }
+body { height: 3300px; background-color: #F6F6F6;}
 
 /* ---헤더------------------------------ */
 #header {
@@ -149,11 +149,60 @@ body { height: 3500px; background-color: #F6F6F6; }
     background-color: rgba(234, 234, 234, 0.7);;
     z-index: 99999;
 }
-    .toggle-menu > li > a {
+    .toggle-menu > li {
         padding: 8px 15px;
         font-size: 1.1rem; color: #5D5D5D;
+        cursor: pointer;
     }
-    .toggle-menu > li > a:hover {
+    .toggle-menu > li:hover {
         background-color: #212121;
         color: #F6F6F6;
     }
+
+
+/* ---모달------------------------------ */
+#modal-back {
+    display: none;
+    position: fixed; z-index: 999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#modal-container { /* 모달 내용 배치 때문에 만듦 */
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+#modal-content {
+    width: 80%; height: 50%;
+    border: 1px solid #212121;
+    background-color: #F6F6F6;
+    overflow: hidden;
+    position: relative;
+}
+#modal-content > .modal-img {
+    width: 100%; height: 100%;
+    background-image: url(images/싱글몰트.png);
+    background-repeat: no-repeat;
+    background-position: center center; background-size: cover;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0;  right: 0; padding: 20px 20px;
+    font-weight: bold; color: #212121; font-size:25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* ---푸터------------------------------ */
+footer {
+    display: flex; justify-content: space-evenly; align-items: center;
+    flex-direction: column;
+    background-color: rgba(93, 93, 93, 0.5); 
+    height: 7vh;
+    font-size: 0.7rem;
+    margin-top: 450px;
+}
